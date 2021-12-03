@@ -5,5 +5,5 @@ ISPeriods = 6
 wfaresultfolder = "resultfiles"
 
 # If use the db option, the location of sqlite db
-wfadbpath = "db/wfaresults_defaultspace.sqlite"
+wfadbpath = "db/wfaresultsV2test.sqlite"
 # wfadbpath = "db/wfaresultstest.sqlite"

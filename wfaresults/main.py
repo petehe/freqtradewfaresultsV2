@@ -1,4 +1,3 @@
-from wfasummaryfile import wfasummaryfile
 from wfadb import wfadb
 
 import config as cfg
