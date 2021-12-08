@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 class wfaresultfile:
@@ -43,6 +44,10 @@ class wfaresultfile:
         ]
 
         if not df.empty:
+            df.replace(r"^\s*$", 0, regex=True)
+            df.replace(" ", 0, inplace=True)
+
+            df.fillna(0, inplace=True)
 
             # process % sign for retuns
             df["ho_return"] = df["ho_return"].str.strip("%")
