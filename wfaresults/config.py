@@ -1,5 +1,9 @@
 # the location of incoming result files
-wfaresultfolder = "resultfiles"
+BackTestOnly = False
+if BackTestOnly:
+    resultfolder = "btresultfiles"
+else:
+    resultfolder = "wfaresultfiles"
 
 # If use the db option, the location of sqlite db
 wfadbpath = "db/wfaresultsV2.sqlite"

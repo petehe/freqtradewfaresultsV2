@@ -4,7 +4,7 @@ import config as cfg
 
 
 def main():
-    db = wfadb(cfg.wfaresultfolder, cfg.wfadbpath)
+    db = wfadb(cfg.BackTestOnly, cfg.resultfolder, cfg.wfadbpath)
     db.processresultfolder()
 
 
